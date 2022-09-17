@@ -1,0 +1,438 @@
+:root {
+  --main-color: #edf6f9;
+  --second-color: #277BC0;
+  --font-color: #414a4c;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  background: rgb(255,247,235);
+  background: linear-gradient(177deg, rgba(255,247,235,1) 45%, rgba(255,255,255,1) 100%, rgba(255,252,248,1) 100%);
+  color: var(--font-color);
+}
+span {
+  color: var(--second-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo-header {
+  font-size: 35px;
+}
+.logo-header a {
+  color: var(--font-color);
+}
+.navbar {
+  width: 40%;
+}
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.navbar-list a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.2s all ease-in-out;
+}
+.navbar-list > li > a:hover {
+  color: var(--second-color);
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar-sticky {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: var(--font-color);
+}
+
+//Dark Mode Toggle
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+//Home Section
+.home-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+.home-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 113vh;
+  background-image: url("../img/background.jpg");
+  background-size: 100%;
+  margin-top: -10%;
+}
+.home-caption > h1 {
+  width: 40%;
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 0;
+  padding-left: 10%;
+ 
+}
+.home-caption > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10%;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: var(--second-color);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s all ease 0s;
+}
+.home-caption > h2:hover {
+  transform: translateX(-5px);
+}
+.home-caption > p {
+  width: 40%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10%;
+  padding: 15px 10px;
+  margin-top: -40px;
+  line-height: 1.6;
+}
+.btn-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.search-product {
+  position: absolute;
+  top: 82%;
+  left: 9%;
+
+}
+.form-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 50px 35px;
+  border-radius: 50px;
+  color: var(--second-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.form-search > .input-search {
+  width: 500px;
+  height: 50px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  order: 2;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 20px;
+}
+.input-search:focus, input:hover {
+  outline: none;
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(0, 0, 0 / 10%);
+ }
+.form-search > label {
+  order: 1;
+  font-size: 30px;
+}
+.form-search > button {
+  padding: 20px;
+  order: 3;
+  border-radius: 50px;
+  background-color: var(--second-color);
+  border: 1px solid transparent;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+.form-search > button:hover {
+  transform: translateY(-4px);
+}
+
+.location-bubble {
+  height: 60px;
+  background-color: #fff;
+  padding: 0 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s all ease 0s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.location-bubble > h2 {
+  font-size: 20px;
+  color: var(--font-color);
+}
+#location-ubud {
+  bottom: 25%;
+  right: 20%;
+}
+#location-kuta {
+  top: 35%;
+  left: 55%;
+}
+#location-nusa {
+  top: 18%;
+  left: 83%;
+}
+.location-bubble:hover {
+  transform: translateY(-5px);
+}
+
+//Advantages Section
+.advantages-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-top: 15%;
+}
+.header-advantages {
+  width: 32%;
+  padding: 0 50px;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+.header-advantages > h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.header-advantages > h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: -20px;
+}
+.header-advantages > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -30px;
+}
+.advantages-container {
+  width: 60%;
+  display: flex;
+  margin: -20% 5% 0 40%;
+}
+.advantages-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  margin-left: -40px;
+}
+#advantages-up {
+  margin-top: -7%;
+}
+#advantages-down {
+  margin-top: -4%;
+}
+.advantages-card > .advantages-img > img {
+  width: 150px;
+  margin-left: -40px;
+}
+.advantages-card > figcaption > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+.advantages-card > figcaption > p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -15px;
+  line-height: 1.6;
+}
+
+//Product Section
+.product-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-itemns: center;
+  justify-content: center;
+}
+.product-header {
+  position: relative;
+  margin-left: 50px;
+
+}
+.product-header > h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-left: 5%;
+}
+.product-header > h3 {
+  width: 250px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 5px;
+  border-radius: 30px;
+  margin-left: 10%;
+  margin-top: -40px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  margin: 10px;
+}
+.product-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+.product-img > img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+	height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card-caption > h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--second-color);
+  padding-left: 10px;
+  margin-top: -10px;
+}
+.card-caption > p {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--font-color);
+  padding-left: 10px;
+}
+.card-caption > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 15px 15px;
+  background-color: var(--second-color);
+  font-size: 15px;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid var(--main-color);
+  padding-left: 10px;
+  transition: 0.3s ease-in-out;
+  margin-left: 10px;
+}
+.card-caption > button:hover {
+  border: 2px solid var(--main-color);
+  transform: translateX(10px);
+  border: 1px solid var(--main-color);
+}
+
+//Destination Section
+.destination-container {
+  width: 100%;
+  position: relative;
+  
+}
+.destination-header > h1{
+  font-size: 55px;
+  font-weight: 700;
+  padding: 0 50px;
+  margin-top: -20px;
+  margin-left: 5%;
+  
+}
+.destination-header > h2{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 100px;
+  margin-top: 10%;
+  margin-left: 5%;
+  
+}
+.destination-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.destination-card {
+  display: flex;
+  justify-content: center
+  align-items: center;
+  border-radius: 15px; 
+}
+.destination-card > .destination-img >img {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  transition: 0.5s all ease-in-out;
+}
+.destination-card > .destination-img {
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.destination-img > img:hover {
+  transform: scale(1.5);
+  transition: 0.5s all ease-in-out;
+}
+.destination-card > figure >h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: -50px 0 0 0;
+  text-align: center;
+  color: #fff;
+}
+
