@@ -436,3 +436,111 @@ section {
   color: #fff;
 }
 
+//Experience Section
+.experience-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.experience-header {
+  width: 60%;
+  margin-top: 10%;
+}
+.experience-header > h1{
+  font-size: 55px;
+  font-weight: 700;
+  padding: 0 50px;
+  margin-top: -20px;
+  margin-left: 5%;
+  
+}
+.experience-header > h2{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 100px;
+  margin-left: 5%;
+}
+.experience-header > p{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 100px;
+  margin-top: -30px;
+  line-height: 30px;
+}
+.detail-experience {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  padding-left: 100px;
+}
+.detail-card {
+  width: 10%;
+  
+}
+.detail-card > h1 {
+  font-size: 60px;
+  color: var(--second-color);
+  font-weight: bold;
+}
+.detail-card > p {
+  margin-top: -50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.experience-rating {
+  position: absolute;
+  font-size: 30px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  line-height: 10px;
+  margin-left: 60%;
+  margin-top: -5%;
+  transition: 0.3s all ease 0s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+.experience-rating:hover {
+  transform: translateY(-5px);
+}
+.experience-verifed {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0 25px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  line-height: 10px;
+  margin-left: 85%;
+  margin-top: -40%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.5s all ease 0s;
+  cursor: pointer;
+}
+.experience-verifed > img {
+  width: 50px;
+}
+.experience-verifed > h1 {
+  font-size: 25px;
+}
+.experience-verifed > p {
+  font-size: 15px;
+}
+.experience-verifed:hover {
+  transform: translateY(-5px);
+}
+.experience-img > img {
+  width: 500px;
+  margin-top: -40%;
+  margin-left: 60%;
+
+}
