@@ -14,90 +14,95 @@
   </head>
   <body>
     <!-- Start Header -->
-    <header class="header">
+    <header>
+     <nav class="nav">
       <div class="logo-header">
-        <a href="#home-section"><i class="fa-solid fa-plane-departure"></i></a>
+        <a href="#home"><i class="fa-solid fa-plane-departure"></i></a>
       </div>
       <div class="navbar">
         <ul class="navbar-list">
           <li><a href="#home-section" class="list-item"><i class="fa-solid fa-house"></i> Home</a></li>
-          <li><a href="http://" class="list-item"><i class="fa-solid fa-calendar-days"></i> Plan Your Trip</a></li>
+          <li><a href="#product" class="list-item"><i class="fa-solid fa-calendar-days"></i> Plan Your Trip</a></li>
           <li><a href="http://" class="list-item"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
           <li><a href="http://" class="list-item"><i class="fa-solid fa-camera"></i> About</a></li>
         </ul>
       </div>
+     </nav>
     </header>
     <!-- End Header -->
       <!-- === -->
       <!-- Start Main-->
     <main> 
       <!-- Start Home Section -->
-      <section class="home-section" id="home-section">
-        <div class="home-caption">
-          <h2>Explore Bali &#127759</h2>
-          <h1>Exciting Vacation in Bali &#128640</h1>
-          <p>We always make our costumer happy by providing as many choises as posible.</p>
-        </div>
-        <div class="search-product">
-            <form action="" class="form-search">
-              <input type="text" name="search" class="input-search" placeholder="Search Location">
-              <label for="search"><i class="fa-solid fa-location-dot label-icons"></i></i></label>
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-        <div class="location-bubble" id="location-ubud">
-          <h2><span><i class="fa-solid fa-location-dot"></i> Kuta</span>
-          </h2>
-        </div>
-        <div class="location-bubble" id="location-kuta">
-          <h2><span><i class="fa-solid fa-location-dot"></i> Ubud</span></h2>
-        </div>
-        <div class="location-bubble" id="location-nusa">
-          <h2><span><i class="fa-solid fa-location-dot"></i> Nusa Penida</span></h2>
+      <section>
+          <div class="home_container" id="home">
+            <figure class="home-img">
+              <img src="/assets/img/home-img.png" alt="">
+            </figure>
+          <div class="home-caption">
+            <h2>Explore Bali &#127759</h2>
+            <h1>Exciting Vacation in Bali &#128640</h1>
+            <p>We always make our costumer happy by providing as many choises as posible.</p>
+            <div class="search-product">
+              <form action="" class="form-search">
+                <input type="text" name="search" class="input-search" placeholder="Search Location">
+                <label for="search"><i class="fa-solid fa-location-dot label-icons"></i></i></label>
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+          </div>
+          <div class="location-bubble" id="location-ubud">
+            <h2><span><i class="fa-solid fa-location-dot"></i> Kuta</span>
+            </h2>
+          </div>
+          <div class="location-bubble" id="location-kuta">
+            <h2><span><i class="fa-solid fa-location-dot"></i> Ubud</span></h2>
+          </div>
+          <div class="location-bubble" id="location-nusa">
+            <h2><span><i class="fa-solid fa-location-dot"></i> Nusa Penida</span></h2>
+          </div>
+          </div>
         </div>
       </section>
       <!-- End Home Section -->
       <!-- === -->
       <!-- Start Advantages Section -->
-      <section class="advantages-section" >
-        <article>
-          <div class="advantages-container">
-            <div class="header-advantages">
-              <h2><span>What We Serve</span></h2>
-              <h1>Top Values For You &#128293</h1>
-              <p>Try a variety of benefits when using our services.</p>
+      <section>
+        <div class="advantages_container">
+          <div class="advantages-header">
+            <h2><span>What We Serve</span></h2>
+            <h1>Top Values For You &#128293</h1>
+            <p>Try a variety of benefits when using our services.</p>
+          </div>
+          <div class="advantages-list-card">
+            <div class="advantages-card" id="advantages-up">
+              <figure class="advantages-img">
+                <img src="./assets/img/globe.png" alt="" srcset="">
+              </figure>
+              <figcaption>
+                <h2>Lot of Choices</h2>
+                <p>Total <span>100+ destination</span> that we work with</p>
+              </figcaption>
             </div>
-            <div class="advantages-container-card" >
-              <div class="advantages-card" id="advantages-up">
-                <figure class="advantages-img">
-                  <img src="./assets/img/globe.png" alt="" srcset="">
-                </figure>
-                <figcaption>
-                  <h2>Lot of Choices</h2>
-                  <p>Total <span>100+ destination</span> that we work with</p>
-                </figcaption>
-              </div>
-              <div class="advantages-card" id="advantages-center">
-                <figure class="advantages-img">
-                  <img src="./assets/img/backpack.png" alt="" srcset="">
-                </figure>
-                <figcaption>
-                  <h2>Best Tour Guide</h2>
-                  <p>Our tour Guide with <span>5+ years of experience</span></p>
-                </figcaption>
-              </div>
-              <div class="advantages-card" id="advantages-down">
-                <figure class="advantages-img">
-                  <img src="./assets/img/ticket.png" alt="" srcset="">
-                </figure>
-                <figcaption>
-                  <h2>Easy Booking</h2>
-                  <p>With an <span>easy and fast</span> purchase process</p>
-                </figcaption>
-              </div>
+            <div class="advantages-card" id="advantages-center">
+              <figure class="advantages-img">
+                <img src="./assets/img/backpack.png" alt="" srcset="">
+              </figure>
+              <figcaption>
+                <h2>Best Tour Guide</h2>
+                <p>Our tour Guide with <span>5+ years of experience</span></p>
+              </figcaption>
             </div>
-           </div>
-        </article>
+            <div class="advantages-card" id="advantages-down">
+              <figure class="advantages-img">
+                <img src="./assets/img/ticket.png" alt="" srcset="">
+              </figure>
+              <figcaption>
+                <h2>Easy Booking</h2>
+                <p>With an <span>easy and fast</span> purchase process</p>
+              </figcaption>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- End Advantages Section -->
       <!-- === -->
@@ -230,7 +235,7 @@
         </section>
     </div>
       <!-- End Experience Section -->
-      <aside class="started-aside">
+      <aside>
         <div class="started-container">
           <div class="started-header">
             <h1>Prepare Your Self & Let's Explore The Beauty of Bali</h1>

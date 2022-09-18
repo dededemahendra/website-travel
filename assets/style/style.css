@@ -18,7 +18,7 @@ span {
   font-weight: bold;
   text-transform: uppercase;
 }
-header {
+.nav {
   width: 100%;
   height: 40px;
   display: flex;
@@ -27,7 +27,6 @@ header {
   align-items: center;
   margin-top: 20px;
 }
-
 .logo-header {
   font-size: 35px;
 }
@@ -62,16 +61,13 @@ header {
 
 section {
   width: 100%;
-  height: 100vh;
-  background-color: black;
+  height: 103vh;
+  margin: 0;
 }
-
-//Home Section
-.home-section {
+.home_container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  
 }
 .home-caption {
   display: flex;
@@ -79,23 +75,17 @@ section {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 113vh;
-  background-image: url("../img/background.jpg");
   background-size: 100%;
-  margin-top: -10%;
+  padding-left: 5%;
 }
 .home-caption > h1 {
-  width: 40%;
+  width: 100%;
   font-size: 80px;
   font-weight: 700;
-  margin-top: 0;
-  padding-left: 10%;
- 
 }
 .home-caption > h2 {
   font-size: 20px;
   font-weight: 500;
-  margin-left: 10%;
   padding: 15px 25px;
   border-radius: 30px;
   background-color: #fff;
@@ -103,30 +93,29 @@ section {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.3s all ease 0s;
+  margin-bottom: -40px;
 }
 .home-caption > h2:hover {
   transform: translateX(-5px);
 }
 .home-caption > p {
-  width: 40%;
-  font-size: 20px;
+  width: 100%;
+  font-size: 23px;
   font-weight: 500;
-  margin-left: 10%;
-  padding: 15px 10px;
-  margin-top: -40px;
   line-height: 1.6;
+  margin-top: -50px;
 }
-.btn-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+.home-img {
+  order: 1;
+  width: 90%;
+}
+.home-img > img {
+  width: 600px;
 }
 .search-product {
   position: absolute;
-  top: 82%;
-  left: 9%;
-
+  top: 70%;
+  left: 13%;
 }
 .form-search {
   display: flex;
@@ -194,62 +183,60 @@ section {
   color: var(--font-color);
 }
 #location-ubud {
-  bottom: 25%;
+  bottom: 20%;
   right: 20%;
 }
 #location-kuta {
   top: 35%;
-  left: 55%;
+  left: 60%;
 }
 #location-nusa {
-  top: 18%;
-  left: 83%;
+  top: 10%;
+  left: 70%;
 }
 .location-bubble:hover {
   transform: translateY(-5px);
 }
-
-//Advantages Section
-.advantages-container {
-  width: 100%;
-  height: 100%;
-  text-transform: capitalize;
+.advantages_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
-.header-advantages {
-  width: 30%;
-  padding: 5%;
+.advantages-header {
+  padding: 4%;
 }
-.header-advantages > h2 {
+.advantages-header > h2 {
   font-size: 30px;
   font-weight: 600;
   margin-top: 30px;
 }
-.header-advantages > h1 {
+.advantages-header > h1 {
   font-size: 65px;
   font-weight: 700;
   margin-top: -20px;
 }
-.header-advantages > p {
+.advantages-header > p {
   font-size: 20px;
   font-weight: 500;
   margin-top: -30px;
 }
-.advantages-container-card {
-  width: 60%;
+.advantages-list-card {
+  height: 100%;
   display: flex;
-  margin: -25% 5% 0 40%;
 }
 .advantages-card {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 200px;
   height: 300px;
-  padding: 50px;
+  padding: 40px;
 }
 #advantages-up {
-  margin-top: -7%;
+  margin-top: -5%;
 }
 #advantages-down {
   margin-top: -4%;
@@ -269,8 +256,6 @@ section {
   margin-top: -15px;
   line-height: 1.6;
 }
-
-//Product Section
 .product-section {
   width: 100%;
   height: 100vh;
@@ -280,7 +265,6 @@ section {
   justify-content: center;
 }
 .product-header {
-  position: relative;
   margin-left: 50px;
 
 }
@@ -324,7 +308,6 @@ section {
 
 }
 .product-img > img {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,12 +350,8 @@ section {
   transform: translateX(10px);
   border: 1px solid var(--main-color);
 }
-
-//Destination Section
 .destination-container {
   width: 100%;
-  position: relative;
-  
 }
 .destination-header > h1{
   font-size: 55px;
@@ -428,10 +407,7 @@ section {
   text-align: center;
   color: #fff;
 }
-
-//Experience Section
 .experience-container {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -439,40 +415,33 @@ section {
   margin: 5%;
 }
 .experience-header {
-  width: 60%;
-  margin-top: 10%;
+  width: 100%;
+  margin-left: 5%; 
 }
 .experience-header > h1{
   font-size: 55px;
   font-weight: 700;
-  padding: 0 50px;
-  margin-top: -20px;
-  margin-left: 5%;
+  margin-top: -10px;
   
 }
 .experience-header > h2{
   font-size: 30px;
   font-weight: 700;
-  padding: 0 100px;
-  margin-left: 5%;
 }
 .experience-header > p{
   font-size: 20px;
   font-weight: 700;
-  padding: 0 100px;
-  margin-top: -30px;
+  margin-top: -35px;
   line-height: 30px;
 }
 .detail-experience {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
-  gap: 60px;
-  padding-left: 100px;
+  gap: 90px;
 }
 .detail-card {
   width: 10%;
-  
 }
 .detail-card > h1 {
   font-size: 60px;
@@ -492,8 +461,8 @@ section {
   border-radius: 20px;
   border: 1px solid transparent;
   line-height: 10px;
-  margin-left: 60%;
-  margin-top: -5%;
+  margin-left: 50%;
+  margin-top: -8%;
   transition: 0.3s all ease 0s;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
@@ -507,13 +476,12 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0;
   padding: 0 25px;
   background-color: white;
   border-radius: 20px;
   border: 1px solid transparent;
   line-height: 10px;
-  margin-left: 85%;
+  margin-left: 75%;
   margin-top: -40%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: 0.5s all ease 0s;
@@ -533,8 +501,6 @@ section {
 }
 .experience-img > img {
   width: 500px;
-  margin-top: -40%;
-  margin-left: 60%;
 }
 .started-container {
   display: flex;
@@ -593,7 +559,6 @@ section {
   line-height: 25px;
 }
 .social-media {
-  
   font-size: 30px;
 }
 .social-media > a {
@@ -628,5 +593,303 @@ section {
   border-radius: 30px;
   padding: 10px;
   color: #fff;
-
+}
+@media only screen and (max-width: 547px) {
+  .home_container {
+    flex-direction: column;
+    height: 100%;
+    margin-top: 30px;
+  }
+  div {
+    border: 1px solid #000;
+  }
+  .home-caption {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home-caption > h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .home-caption > h2 {
+    width: 20%;
+    font-size: 17px;
+    padding: 10px;
+    margin-bottom: -15px;
+  }
+  .home-caption > p {
+    font-size: 15px; 
+    margin-top: -20px;
+  }
+  .home-img {
+    margin-top: -25px;
+  }
+  .home-img > img {
+    width: 400px;
+  }
+  .location-bubble {
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+  }
+  .location-bubble > h2{
+    font-size: 13px;
+  }
+  #location-ubud {
+    bottom: 50%;
+    right: 10%;
+  }
+  #location-kuta {
+    top: 35%;
+    left: 30%;
+  }
+  #location-nusa {
+    top: 45%;
+    left: 10%;
+  }
+  .search-product {
+    top: 73%;
+  }
+  .form-search {
+    padding: 20px 20px;
+  }
+  .form-search > .input-search {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+  .form-search > label {
+    font-size: 15px;
+  }
+  .form-search > button {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .advantages_container {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20%;
+  }
+  .advantages-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .advantages-header > h2 {
+    font-size: 20px;
+  }
+  .advantages-header > h1 {
+    font-size: 40px;
+  }
+  .advantages-header > p {
+    font-size: 15px;
+  }
+  .advantages-list-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .advantages-card {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #advantages-up {
+    margin-left: 0;
+  }
+  #advantages-down {
+    margin-left: 0;
+  }
+  .advantages-card > .advantages-img > img {
+    width: 150px;
+    margin-top: -20px
+  }
+  .advantages-card > figcaption > h2 {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+  .advantages-card > figcaption > p {
+    font-size: 15px;
+  }
+  .product-section {
+    margin-top: 100%;
+  }
+  .product-header {
+    margin-left: 0;
+    text-align: center;
+  }
+  .product-header > h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 5%;
+  }
+  .product-header > h3 {
+    width: 150px;
+    font-size: 15px;
+    padding: 10px 5px;
+    margin-left: 15%;
+    margin-top: -20px;
+  }
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .product-card {
+    gap: 20px;
+    width: 300px;
+    margin: 10px;
+    
+  }
+  .product-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .product-img > img {
+    width: 250px;
+    height: 250px;
+  }
+  .card-caption > h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card-caption > p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .card-caption > button {
+    padding: 10px 10px;
+  }
+  .destination-container {
+    margin-top: 100%;
+  }
+  .destination-header {
+    text-align: center;
+    
+  }
+  .destination-header > h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .destination-header > h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .experience-container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .experience-header {
+    width: 90%;
+    text-align: center;
+  }
+  .experience-header > h2 {
+    font-size: 25px;
+  }
+  .experience-header > h1 {
+    font-size: 40px;
+  }
+  .experience-header > p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+.detail-card > h1 {
+  font-size: 35px;
+}
+.detail-card > p {
+  margin-top: -40px;
+  font-size: 20px;
+}
+.experience-rating {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-left: 5%;
+  margin-top: 70%;
+}
+.experience-verifed {
+  padding: 0 15px;
+  margin-left: 55%;
+  margin-top: 0;
+  text-align: center;
+}
+.experience-verifed > img {
+  width: 40px;
+}
+.experience-verifed > h1 {
+  margin-top: 15px;
+  font-size: 25px;
+}
+.experience-verifed > p {
+  font-size: 15px;
+  margin-top: -10px;
+}
+.experience-img > img {
+  width: 300px;
+  padding: 30px;
+}
+.started-container {
+  margin: 15%;
+}
+.started-header {
+  padding: 50px 50px;
+}
+.started-header > h1 {
+  font-size: 35px;
+}
+.started-header > p {
+  font-size: 20px;
+}
+.start-btn {
+  padding: 13px 15px;
+  font-size: 15px;
+}
+.footer-container {
+  flex-direction: column;
+}
+.footer-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about-footer {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.company-footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.getin-footer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feedback{
+  width: 50%
 }
