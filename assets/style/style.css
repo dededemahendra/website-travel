@@ -594,14 +594,12 @@ section {
   padding: 10px;
   color: #fff;
 }
-@media only screen and (max-width: 547px) {
+@media (min-height: 680px), screen and (orientation: portrait)
+{
   .home_container {
     flex-direction: column;
     height: 100%;
     margin-top: 30px;
-  }
-  div {
-    border: 1px solid #000;
   }
   .home-caption {
     margin: 0;
@@ -796,6 +794,7 @@ section {
     width: 100%;
     flex-direction: column;
     margin: 0;
+    margin-top: 15%;
   }
   .experience-header {
     width: 90%;
@@ -811,85 +810,91 @@ section {
     font-size: 15px;
     line-height: 20px;
   }
-.detail-card > h1 {
-  font-size: 35px;
-}
-.detail-card > p {
-  margin-top: -40px;
-  font-size: 20px;
-}
-.experience-rating {
-  font-size: 20px;
-  padding: 5px 10px;
-  margin-left: 5%;
-  margin-top: 70%;
-}
-.experience-verifed {
-  padding: 0 15px;
-  margin-left: 55%;
-  margin-top: 0;
-  text-align: center;
-}
-.experience-verifed > img {
-  width: 40px;
-}
-.experience-verifed > h1 {
-  margin-top: 15px;
-  font-size: 25px;
-}
-.experience-verifed > p {
-  font-size: 15px;
-  margin-top: -10px;
-}
-.experience-img > img {
-  width: 300px;
-  padding: 30px;
-}
-.started-container {
-  margin: 15%;
-}
-.started-header {
-  padding: 50px 50px;
-}
-.started-header > h1 {
-  font-size: 35px;
-}
-.started-header > p {
-  font-size: 20px;
-}
-.start-btn {
-  padding: 13px 15px;
-  font-size: 15px;
-}
-.footer-container {
-  flex-direction: column;
-}
-.footer-header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.about-footer {
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
-}
-.company-footer {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-}
-.getin-footer {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.feedback{
-  width: 50%
+  .detail-experience {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .detail-card > h1 {
+    font-size: 35px;
+  }
+  .detail-card > p {
+    margin-top: -40px;
+    font-size: 20px;
+  }
+  .experience-rating {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 5%;
+    margin-top: 70%;
+  }
+  .experience-verifed {
+    padding: 0 15px;
+    margin-left: 55%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .experience-verifed > img {
+    width: 40px;
+  }
+  .experience-verifed > h1 {
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  .experience-verifed > p {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .experience-img > img {
+    width: 300px;
+    padding: 30px;
+  }
+  .started-container {
+    margin: 15%;
+  }
+  .started-header {
+    padding: 50px 50px;
+  }
+  .started-header > h1 {
+    font-size: 35px;
+  }
+  .started-header > p {
+    font-size: 20px;
+  }
+  .start-btn {
+    padding: 13px 15px;
+    font-size: 15px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-footer {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .company-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .getin-footer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback{
+    width: 50%
+  }
 }
