@@ -4,281 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Company Profile</title>
+    <title>Travel Website</title>
     <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Start Header -->
+    <!-- Header -->
     <header>
-     <nav class="nav">
-      <div class="logo-header">
-        <a href="#home"><i class="fa-solid fa-plane-departure"></i></a>
-      </div>
-      <div class="navbar">
-        <ul class="navbar-list">
-          <li><a href="#home-section" class="list-item"><i class="fa-solid fa-house"></i> Home</a></li>
-          <li><a href="#product" class="list-item"><i class="fa-solid fa-calendar-days"></i> Plan Your Trip</a></li>
-          <li><a href="http://" class="list-item"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
-          <li><a href="http://" class="list-item"><i class="fa-solid fa-camera"></i> About</a></li>
+      <nav>
+        <img src="/assets/img/globe.png" alt="Logo Travel" />
+        <ul class="nav_list">
+          <li class="nav_item" id="item1"><i class="fa-solid fa-map"></i>
+            <a href=""> </a>
+            Destination</li>
+          <li class="nav_item" id="item2"><i class="fa-solid fa-bed"></i>
+            <a href=""></i> </a>
+            Hotel</li>
+          <li class="nav_item" id="item3"><i class="fa-solid fa-plane"></i>
+            <a href=""></a>
+            Flight</li>
+          <li class="nav_item"><i class="fa-solid fa-user"></i><a href="">Login</a></li>
+          <li class="nav_item"><button>Sign Up</button></li>
         </ul>
-      </div>
-     </nav>
+      </nav>
     </header>
     <!-- End Header -->
-      <!-- === -->
-      <!-- Start Main-->
-    <main> 
-      <!-- Start Home Section -->
+    <main>
+      <!-- Hero Section -->
       <section>
-          <div class="home_container" id="home">
-            <figure class="home-img">
-              <img src="/assets/img/home-img.png" alt="">
-            </figure>
-          <div class="home-caption">
-            <h2>Explore Bali &#127759</h2>
-            <h1>Exciting Vacation in Bali &#128640</h1>
-            <p>We always make our costumer happy by providing as many choises as posible.</p>
-            <div class="search-product">
-              <form action="" class="form-search">
-                <input type="text" name="search" class="input-search" placeholder="Search Location">
-                <label for="search"><i class="fa-solid fa-location-dot label-icons"></i></i></label>
-              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </form>
-          </div>
-          <div class="location-bubble" id="location-ubud">
-            <h2><span><i class="fa-solid fa-location-dot"></i> Kuta</span>
-            </h2>
-          </div>
-          <div class="location-bubble" id="location-kuta">
-            <h2><span><i class="fa-solid fa-location-dot"></i> Ubud</span></h2>
-          </div>
-          <div class="location-bubble" id="location-nusa">
-            <h2><span><i class="fa-solid fa-location-dot"></i> Nusa Penida</span></h2>
-          </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Home Section -->
-      <!-- === -->
-      <!-- Start Advantages Section -->
-      <section>
-        <div class="advantages_container">
-          <div class="advantages-header">
-            <h2><span>What We Serve</span></h2>
-            <h1>Top Values For You &#128293</h1>
-            <p>Try a variety of benefits when using our services.</p>
-          </div>
-          <div class="advantages-list-card">
-            <div class="advantages-card" id="advantages-up">
-              <figure class="advantages-img">
-                <img src="./assets/img/globe.png" alt="" srcset="">
-              </figure>
-              <figcaption>
-                <h2>Lot of Choices</h2>
-                <p>Total <span>100+ destination</span> that we work with</p>
-              </figcaption>
-            </div>
-            <div class="advantages-card" id="advantages-center">
-              <figure class="advantages-img">
-                <img src="./assets/img/backpack.png" alt="" srcset="">
-              </figure>
-              <figcaption>
-                <h2>Best Tour Guide</h2>
-                <p>Our tour Guide with <span>5+ years of experience</span></p>
-              </figcaption>
-            </div>
-            <div class="advantages-card" id="advantages-down">
-              <figure class="advantages-img">
-                <img src="./assets/img/ticket.png" alt="" srcset="">
-              </figure>
-              <figcaption>
-                <h2>Easy Booking</h2>
-                <p>With an <span>easy and fast</span> purchase process</p>
-              </figcaption>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Advantages Section -->
-      <!-- === -->
-      <!-- Start Product Section -->
-      <section class="product-section">
-        <div class="product-header">
-          <h2>Our Best Product</h2>
-          <h3>Special For You &#128153</h3>
-        </div>
-        <div class="product-container">
-          <div class="product-card">
-            <figure class="product-img">
-              <img src="/assets/img/destination-5.jpg" alt="">
-            </figure>
-             <figcaption class="card-caption">
-                <h2>Private tour in Nusa Penida</h2>
-                <p>start from IDR 290k/person</p>
-                <button type="submit" class="card-button">Read More<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-             </figcaption>
-          </div>
-          <div class="product-card">
-            <figure class="product-img">
-              <img src="/assets/img/destination-5.jpg" alt="">
-            </figure>
-             <figcaption class="card-caption">
-                <h2>Private tour in Nusa Penida</h2>
-                <p>start from IDR 290k/person</p>
-                <button type="submit" class="card-button">Read More<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-             </figcaption>
-          </div>
-          <div class="product-card">
-            <figure class="product-img">
-              <img src="/assets/img/destination-5.jpg" alt="">
-            </figure>
-             <figcaption class="card-caption">
-                <h2>Private tour in Nusa Penida</h2>
-                <p>start from IDR 290k/person</p>
-                <button type="submit" class="card-button">Read More<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-             </figcaption>
-          </div>
-        </div>
-      </section>
-      <!-- End Product Section -->
-      <!-- === -->
-      <!-- Start Destination Section -->
-      <section class="destination-section">
-        <div class="destination-container">
-          <div class="destination-header">
-            <h2><span>Top Destination</span></h2>
-            <h1>Explore Top Destination &#128747</h1>
-          </div>
-          <div class="destination-content">
-            <div class="destination-card">
-              <figure class="destination-img">
-                <img src="/assets/img/destination-1.jpg" alt="" />
-                <h2>Monkey Forest</h2>
-              </figure>
-            </div>
-            <div class="destination-card">
-              <figure class="destination-img">
-                <img src="/assets/img/destination-2.jpg" alt="" />
-                <h2>Danau Beratan</h2>
-              </figure>
-            </div>
-            <div class="destination-card">
-              <figure class="destination-img">
-                <img src="/assets/img/destination-3.jpg" alt="" />
-                <h2>Kuta Beach</h2>
-              </figure>
-            </div>
-            <div class="destination-card">
-              <figure class="destination-img"> 
-                <img src="/assets/img/destination-4.jpg" alt="" />
-                <h2>Ubud</h2>
-              </figure>
-            </div>
-            <div class="destination-card">
-              <figure class="destination-img">
-                <img src="/assets/img/destination-5.jpg" alt="" />
-                <h2>Nusa Dua</h2>
-              </figure>
-            </div>
-            <div class="destination-card">
-              <figure class="destination-img">
-                <img src="/assets/img/destination-6.jpg" alt="" />
-                <h2>Nusa Penida</h2>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Destination Section -->
-      <!-- === -->
-      <!-- Start Experience Section -->
-      <section class="experience-section">
-        <div class="experience-container" >
-          <article class="experience-header">
-            <h2><span>Our Experience</span></h2>
-            <h1>With Our Experience We Will Serve You &#127780</h1>
-            <p>Since we first opened we have always prioritized the convenience of ours users by providing low prices and with a easy process</p>
-            <div class="detail-experience">
-              <div class="detail-card">
-                <h1>10</h1>
-                <p>Years Experience</p>
-              </div>
-              <div class="detail-card">
-                <h1>20</h1>
-                <p>Destination Collaboration</p>
-              </div>
-              <div class="detail-card">
-                <h1>50k+</h1>
-                <p>Happy Customer</p>
-              </div>
-            </div>
-            <div class="experience-rating">
-              <p>How your experience?</p>
-              <p>&#128512 &#128528 &#128542 &#128545	 </p>
-            </div>
-            <div class="experience-verifed">
-              <img src="./assets/img/success.png" alt="">
-              <h1>100%</h1>
-              <p>Verifed</p>
-            </div>
-          </article>
-          <div>
-            <figure class="experience-img">
-            <img src="./assets/img/review.png" alt="">
+        <div class="hero_container">
+          <figure class="hero_img">
+            <img src="/assets/img/Traveller1.png" alt="" />
+            <!-- <img src="/assets/img/plane.png" alt="" />
+            <img src="/assets/img/plane.png" alt="" /> -->
           </figure>
-        </div>
-        </section>
-    </div>
-      <!-- End Experience Section -->
-      <aside>
-        <div class="started-container">
-          <div class="started-header">
-            <h1>Prepare Your Self & Let's Explore The Beauty of Bali</h1>
-          <p>We have many special offers especially for you</p>
-          <button class="start-btn">Get Started</button>
+          <div class="hero_text">
+            <h3>Best Destinations around the world</h3>
+            <h1>Travel, enjoy and live a new and full life</h1>
+            <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+            <div class="hero_btn">
+              <button id="find_more">Find Out More</button>
+              <button id="play"><i class="fa-sharp fa-solid fa-play"></i></button>
+              <p>Play Demo</p>
+            </div>
           </div>
         </div>
-      </aside>
+      </section>
+      <!-- End Hero Section -->
     </main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-header">
-          <h1>BaliGo</h1>
-          <p>We always make our customer happy by providing as many choises as posible</p>
-          <div class="social-media">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="about-footer">
-          <h1>About</h1>
-          <p>About Us</p>
-          <p>Features</p>
-          <p>News</p>
-          <p>Menu</p>
-        </div>
-        <div class="company-footer">
-          <h1>Why Bali Tour?</h1>
-          <p>Patner with Us</p>
-          <p>FAQ</p>
-        </div>
-        <div class="getin-footer">
-          <p>Question or Feedback? </p>
-          <p>We'd love to hear from you</p>
-          <form action="" class="feedback">
-            <input type="text" placeholder="Email Addres">
-            <button><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-        </div>
-      </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/b050f2c9df.js" crossorigin="anonymous"></script>
+
     <script src="assets/script/main.js"></script>
+    <script src="https://kit.fontawesome.com/b050f2c9df.js" crossorigin="anonymous"></script>
   </body>
 </html>
