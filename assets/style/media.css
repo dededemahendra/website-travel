@@ -1,0 +1,11 @@
+/* Responsive Css */
+@media screen and (max-width: 768px) {
+  .nav_list {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav_list {
+    display: none;
+  }
+}

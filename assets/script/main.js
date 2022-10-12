@@ -1,5 +1,6 @@
-const headerSticky = document.querySelector(".header");
+const menuToggle = document.querySelector("#input");
+const navbar = document.querySelector(" nav ul");
 
-header.addEventListener("scroll", function () {
-  document.document.classList.toggle("navbar-sticky");
+menuToggle.addEventListener("click", function () {
+  navbar.classList.toggle("slide");
 });
