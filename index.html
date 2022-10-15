@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Website</title>
     <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Volkhov:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;600;600;700;800&family=Dancing+Script:wght@400;600;600;700&family=Ibarra+Real+Nova:ital,wght@0,400;0,600;0,600;0,700;1,400;1,600;1,600;1,700&family=Poppins:wght@100;200;300;400;600;600;700;800;900&family=Roboto+Condensed:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Volkhov:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header -->
@@ -46,17 +48,22 @@
       <!-- Hero Section -->
       <section>
         <div class="hero_container">
-          <figure class="hero_img">
+          <figure class="hero_img" data-aos="fade-right"
+          data-aos-offset="600"
+          data-aos-easing="ease-in-sine">
             <img src="/assets/img/Traveller1.png" alt="" />
-            <!-- <img src="/assets/img/plane.png" alt="" />
-            <img src="/assets/img/plane.png" alt="" /> -->
+            <img src="/assets/img/plane.png" alt="" />
+            <img src="/assets/img/plane.png" alt=""  />
           </figure>
-          <div class="hero_text">
+          <div class="hero_text"
+          data-aos="fade-left"
+     data-aos-offset="600"
+     data-aos-easing="ease-in-sine">
             <h3>Best Destinations around the world</h3>
-            <h1>Travel, enjoy and live a new and full life ✈️</h1>
+            <h1><mark>Travel</mark>, enjoy and live a new and full life ⛅</h1>
             <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
-            <div class="hero_btn">
-              <button id="find_more">Find Out More</button>
+            <div class="hero_btn" >
+              <button id="Read_more">Read Out More</button>
               <button id="play"><i class="fa-sharp fa-solid fa-play"></i></button>
               <p>Play Demo</p>
             </div>
@@ -64,9 +71,164 @@
         </div>
       </section>
       <!-- End Hero Section -->
+      <!-- Majority Section -->
+      <section>
+        <div class="majority_container">
+          <div class="majority_header" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h1>Why Choose Us?</h1>
+          </div>
+          <div class="majority_card_list">
+            <div class="card_item" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+              <figure>
+                <img src="/assets/img/world.png" alt="icon card">
+              </figure>
+              <div class="card-text">
+                <h3>Easy Reschedule and Refund</h3>
+                <p>Don't worries to booking online ticket with us, we supported easy reschedule and refund for flexibility your trip</p>
+              </div>
+              <button>Read More</button>
+            </div>
+            <div class="card_item" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+              <figure>
+                <img src="/assets/img/wallet.png"  alt="">
+              </figure>
+              <div class="card-text">
+                <h3>100% Money Back Guarantee</h3>
+                <p>If you have made success payment, our system automatically sends the e-ticket to your email.</p>
+              </div>
+              <button>Read More</button>
+            </div>
+            <div class="card_item" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+              <figure>
+                <img src="/assets/img/verified.png"  alt="">
+              </figure>
+              <div class="card-text">
+                <h3>Secure Online Transaction</h3>
+                <p>PositiveSSL Technology with authenticated Certificates ensures the privacy and security of your online transactions.</p>
+              </div>
+              <button>Read More</button>
+            </div>
+            <div class="card_item" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+              <figure>
+                <img src="/assets/img/price-tag.png"  alt="">
+              </figure>
+              <div class="card-text">
+                <h3>Transparent Rate</h3>
+                <p>Fast Boat ticket prices displayed is official from Fast Boat Company and prices also is included fees.</p>
+              </div>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Majority Section -->
+      <!-- Package Section -->
+      <section>
+        <div class="package_container">
+          <div class="package_header" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h3>top selling</h3>
+            <h1>What Our Package?</h1>
+          </div>
+          <div class="package_card_list">
+            <div class="package_card_item" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+              <figure class="card_package_img">
+                <img src="/assets/img/bali.jpeg" alt="">
+              </figure>
+              <div class="card_package_text" data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom">
+                <p>Bali, Indonesia</p>
+                <p>$5,42k</p>
+              </div>
+              <div class="card_package_btn">
+                <i class="fa-solid fa-location-arrow"></i>
+                <button>10 Days Trip</button>
+              </div>
+            </div>
+            <div class="package_card_item" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+              <figure class="card_package_img">
+                <img src="/assets/img/lombok.jpeg" alt="">
+              </figure>
+              <div class="card_package_text">
+                <p>Lombok, Indonesia</p>
+                <p>$5,42k</p>
+              </div>
+              <div class="card_package_btn">
+                  <i class="fa-solid fa-location-arrow"></i>
+                <button>10 Days Trip</button>
+              </div>
+            </div>
+            <div class="package_card_item" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+              <figure class="card_package_img">
+                <img src="/assets/img/sumba.jpeg" alt="">
+              </figure>
+              <div class="card_package_text">
+                <p>Sumba, Indonesia</p>
+                <p>$5,42k</p>
+              </div>
+              <div class="card_package_btn">
+                <i class="fa-solid fa-location-arrow"></i>
+                <button>10 Days Trip</button>
+              </div>
+            </div>
+          </div>
+          <div class="package_icons" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <img src="/assets/img/Decore.svg" alt="">
+          </div>
+        </div>
+      </section>
+    <!-- End Section -->
+    <!-- Patner Section -->
+    <section>
+      <div class="patner_container">
+        <div class="patner_header">
+          <h1>Our Patner</h1>
+        <div class="patner_list" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+          <div class="patner_item">
+            <img src="/assets/img/amazingthailand.png" alt="">
+          </div>
+          <div class="patner_item">
+            <img src="/assets/img/australia.jpeg" alt="">
+          </div>
+          <div class="patner_item">
+            <img src="/assets/img/greece.gif" alt="">
+          </div>
+          <div class="patner_item">
+            <img src="/assets/img/wondefullindonesia.png" alt="">
+          </div>
+          <div class="patner_item">
+            <img src="/assets/img/traveloka.jpeg" alt="">
+          </div>
+          <div class="patner_item">
+            <img src="/assets/img/hongkong.jpeg" alt="">
+          </div>
+          <div class="patner_item">
+            <img src="/assets/img/etihad.png" alt="">
+          </div>
+          <div class="patner_item">
+            <img src="/assets/img/garudaindonesia.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Patner Section -->
     </main>
 
     <script src="assets/script/main.js"></script>
     <script src="https://kit.fontawesome.com/b050f2c9df.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
