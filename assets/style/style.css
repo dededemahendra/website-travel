@@ -69,7 +69,7 @@ nav {
   padding: 10px 15px;
   background-color: var(--main-color);
   border-radius: 10px;
-  border: 1px solid transparent;
+  border: none;
   color: var(--white-color);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   transition: all 0.5s;
@@ -197,7 +197,7 @@ mark {
 .hero_btn > button {
   padding: 0 20px;
   border-radius: 10px;
-  border: 1px solid transparent;
+  border: none;
   padding: 15px 20px;
   background-color: var(--main-color);
   color: var(--white-color);
@@ -266,7 +266,7 @@ mark {
   position: absolute;
   top: 85%;
   padding: 10px 15px;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 10px;
   background-color: var(--main-color);
   color: var(--white-color);
@@ -286,7 +286,6 @@ mark {
   width: 100%;
   gap: 20px;
   position: relative;
-  margin-top: -5%;
 }
 .package_header > h1 {
   font-size: var(--h1);
@@ -353,7 +352,7 @@ mark {
   background-color: transparent;
   color: var(--second-color);
   border-radius: 10px;
-  border: 1px solid transparent;
+  border: none;
 }
 .package_icons > img {
   position: absolute;
@@ -386,10 +385,272 @@ mark {
   background-color: var(--white-color);
   padding: 30px;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .patner_item > img {
   width: 100px;
   height: 100px;
+}
+
+/* Subscribe Email */
+.subs_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7% 15%;
+  margin: -3% 15% 10% 15%;
+  border-radius: 80px 15px 50px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  background-color: var(--second-color);
+  position: relative;
+}
+.subs_img > img {
+  position: absolute;
+  width: 70px;
+  right: -10px;
+  top: -30px;
+}
+.subs_text {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.subs_email {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.subs_email > input {
+  width: 55%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: none;
+}
+.subs_email :focus {
+  outline: none;
+}
+.subs_email > button {
+  padding: 5px;
+  background: var(--main-color);
+  border: none;
+  color: var(--white-color);
+  border-radius: 5px;
+}
+
+
+
+
+
+/* Responsive Css */
+@media screen and (max-width: 768px) {
+  .nav_list {
+    width: 80%;
+  }
+  .hero_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 20px 20%;
+  }
+  .hero_img > img {
+    margin-top: 20px;
+    width: 500px;
+    margin-left: -30%;
+  }
+  .hero_img > img:nth-child(2) {
+    position: absolute;
+    width: 100px;
+    left: 30%;
+    bottom: 40%;
+  }
+  .hero_img > img:nth-child(3) {
+    position: absolute;
+    width: 100px;
+    right: 15%;
+    bottom: 80%;
+  
+  .hero_text {
+    line-height: 25px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .hero_text > h1 {
+    font-size: 50px;
+    line-height: 65px;
+    margin-top: -20px;
+  }
+  .hero_text > h3 {
+    font-size: 25px;
+  }
+  .hero_text > p {
+    font-size: 15px;
+    margin-top: -20px;
+  }
+  .hero_btn {
+    margin: 0;
+    justify-content: center;
+  }
+  .hero_btn > button {
+    padding: 7px 10px;
+    font-size: 15px;
+  }
+  #find_more {
+    width: 30%;
+    height: auto;
+  }
+  #play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--fourth-color);
+  }
+  .majority_card_list {
+    flex-direction: column;
+  }
+  .card_item {
+    width: 300px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+
+  section {
+    height: 100%;
+    padding: 0 20px;
+  }
+  nav {
+    padding: 11px;
+  }
+  .nav {
+    background-color: var(--white-color);
+  }
+  .nav_list {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 10%;
+    width: 60%;
+    height: 100vh;
+    background-color: var(--white-color);
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    gap: 70px;
+    transform: translateX(100%);
+    transition: all 1s;
+    border-radius: 0 0 0 20px;
+  }
+  .slide {
+    transform: translateX(0);
+  }
+  .menu_toggle {
+    display: flex;
+  }
+  .hero_container {
+    flex-direction: column;
+    margin-top: 30px;
+    margin: 0;
+  }
+  .hero_img > img {
+    width: 400px;
+    margin-right: -25px;
+    margin-top: 30px;
+  }
+  .hero_text {
+    line-height: 25px;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero_text > h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: -20px;
+  }
+  .hero_text > h3 {
+    font-size: 20px;
+  }
+  .hero_text > p {
+    font-size: 15px;
+    margin-top: -20px;
+  }
+  .hero_btn > button {
+    padding: 7px 20px;
+    font-size: 13px;
+  }
+  #find_more {
+    width: 100%;
+    height: auto;
+  }
+  #play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--fourth-color);
+  }
+  .majority_container {
+    margin-top: 10%;
+  }
+  .majority_header > h1 {
+    font-size: 40px;
+  }
+  .majority_card_list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card_item {
+    width: 300px;
+    height: 380px;
+  }
+  .card_item > button {
+    padding: 10px;
+  }
+  .package_container {
+    margin-top: 10%;
+  }
+  .package_header > h3 {
+    font-size: 20px;
+  }
+  .package_header > h1 {
+    font-size: 40px;
+  }
+  .package_card_list {
+    flex-direction: column;
+  }
+  .package_card_item > figure > img {
+    width: 340px;
+  }
+  .package_icons > img {
+    width: 100px;
+    top: 5%;
+  }
+  .patner_header > h1 {
+    font-size: 40px;
+  }
+  .patner_item > img {
+    width: 50px;
+    height: 50px;
+  }
+  .subs_container {
+    margin: 30px 20px 100px 20px;
+    padding: 40px 40px;
+  }
+  .subs_text {
+    font-size: 10px;
+  }
+  .subs_img > img {
+    width: 40px;
+    right: -10px;
+    top: -10px;
+  }
+  .subs_email > input, button {
+    height: 30px;
+  }
 }
