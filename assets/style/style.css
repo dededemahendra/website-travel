@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   width: 100%;
   height: 100%;
@@ -207,16 +211,10 @@ mark {
 .hero_btn > button:hover {
   background-color: var(--second-color);
 }
-#find_more {
+#read_more {
   width: 30%;
   height: 100%;
   background-color: var(--third-color);
-}
-#play {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--fourth-color);
 }
 /* majority Section */
 .majority_container {
@@ -286,6 +284,7 @@ mark {
   width: 100%;
   gap: 20px;
   position: relative;
+  margin-top: -2%;
 }
 .package_header > h1 {
   font-size: var(--h1);
@@ -373,6 +372,8 @@ mark {
   font-size: var(--h1);
   font-weight: 600;
   color: var(--main-color);
+  font-family: "Volkhov";
+  padding-bottom: 20px;
 }
 .patner_list {
   display: flex;
@@ -393,7 +394,7 @@ mark {
   height: 100px;
 }
 
-/* Subscribe Email */
+/* Subscribe Email / Aside */
 .subs_container {
   display: flex;
   flex-direction: column;
@@ -440,13 +441,65 @@ mark {
   color: var(--white-color);
   border-radius: 5px;
 }
+.my_identity {
+  display: flex;
+  justify-content: center;
+}
+.identity_card {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.identity_card > img {
+  width: 100px;
+  border-radius: 50%;
+}
 
-
-
-
+/* Footer */
+.footer_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 10%;
+  margin-top: 20px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  line-height: 40px;
+}
+.footer_socialmedia > ul {
+  display: flex;
+  gap: 20px;
+}
+.footer_socialmedia > ul > li {
+  font-size: 20px;
+}
+.footer_socialmedia > ul > li > a {
+  color: var(--white-color);
+}
+.btn_to_top {
+  position: absolute;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: var(--second-color);
+  right: 5%;
+}
+.btn_to_top a {
+  color: var(--white-color);
+  font-size: 30px;
+}
 
 /* Responsive Css */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
+  section {
+    height: 100%;
+  }
   .nav_list {
     width: 80%;
   }
@@ -474,7 +527,7 @@ mark {
     width: 100px;
     right: 15%;
     bottom: 80%;
-  
+  }
   .hero_text {
     line-height: 25px;
     justify-content: center;
@@ -505,22 +558,26 @@ mark {
     width: 30%;
     height: auto;
   }
-  #play {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--fourth-color);
+  .majority_container {
+    margin: 5%;
   }
-  .majority_card_list {
-    flex-direction: column;
+  .majority_container > .majority_card_list {
+    flex-wrap: wrap;
+    align-items: center;
   }
   .card_item {
     width: 300px;
   }
+  .package_card_list {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+  .btn_to_top {
+    right: 2%;
+  }
 }
 /* Mobile */
 @media screen and (max-width: 576px) {
-
   section {
     height: 100%;
     padding: 0 20px;
@@ -581,18 +638,13 @@ mark {
     margin-top: -20px;
   }
   .hero_btn > button {
-    padding: 7px 20px;
     font-size: 13px;
+    gap: 20px;
   }
-  #find_more {
+  #read_more {
     width: 100%;
     height: auto;
-  }
-  #play {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--fourth-color);
+    padding: 20px;
   }
   .majority_container {
     margin-top: 10%;
@@ -602,15 +654,14 @@ mark {
   }
   .majority_card_list {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: -30px;
   }
   .card_item {
     width: 300px;
     height: 380px;
   }
-  .card_item > button {
-    padding: 10px;
+  .card_item > .majority_button {
+    padding-bottom: 10px;
   }
   .package_container {
     margin-top: 10%;
@@ -650,7 +701,18 @@ mark {
     right: -10px;
     top: -10px;
   }
-  .subs_email > input, button {
+  .subs_email > input,
+  button {
     height: 30px;
+  }
+  .identity_card {
+    padding: 20px;
+    text-align: center;
+  }
+  .footer_container {
+    flex-direction: column;
+  }
+  .btn_to_top {
+    top: 5%;
   }
 }
